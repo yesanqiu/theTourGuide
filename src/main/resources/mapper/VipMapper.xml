@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ysq.theTourGuide.mapper.VipMapper">
+  <resultMap id="BaseResultMap" type="com.ysq.theTourGuide.entity.Vip">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="vip_id" jdbcType="BIGINT" property="vipId" />
+    <result column="vip_level" jdbcType="VARCHAR" property="vipLevel" />
+    <result column="vip_time" jdbcType="TIMESTAMP" property="vipTime" />
+    <result column="vip_date" jdbcType="INTEGER" property="vipDate" />
+    <result column="vip_score" jdbcType="INTEGER" property="vipScore" />
+    <result column="tourist_id" jdbcType="BIGINT" property="touristId" />
+    <result column="auto_renewal" jdbcType="BIT" property="autoRenewal" />
+  </resultMap>
+
+</mapper>

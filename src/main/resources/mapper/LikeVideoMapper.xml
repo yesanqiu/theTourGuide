@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ysq.theTourGuide.mapper.LikeVideoMapper" >
+  <resultMap id="BaseResultMap" type="com.ysq.theTourGuide.entity.LikeVideo" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" property="id" jdbcType="BIGINT" />
+    <result column="tourist_id" property="touristId" jdbcType="BIGINT" />
+    <result column="like_video_id" property="likeVideoId" jdbcType="BIGINT" />
+  </resultMap>
+</mapper>

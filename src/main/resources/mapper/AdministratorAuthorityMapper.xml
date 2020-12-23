@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ysq.theTourGuide.mapper.AdministratorAuthorityMapper" >
+  <resultMap id="BaseResultMap" type="com.ysq.theTourGuide.entity.AdministratorAuthority" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" property="id" jdbcType="INTEGER" />
+    <result column="add_administrator" property="addAdministrator" jdbcType="BIT" />
+    <result column="add_child_admistrator" property="addChildAdmistrator" jdbcType="BIT" />
+    <result column="manage_guide" property="manageGuide" jdbcType="BIT" />
+    <result column="manage_video" property="manageVideo" jdbcType="BIT" />
+    <result column="manage_order" property="manageOrder" jdbcType="BIT" />
+    <result column="manage_scenic" property="manageScenic" jdbcType="BIT" />
+    <result column="inform" property="inform" jdbcType="BIT" />
+  </resultMap>
+</mapper>

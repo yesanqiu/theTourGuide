@@ -1,0 +1,26 @@
+server:
+  port: 7331
+
+spring:
+  servlet:
+    multipart:
+      max-request-size: 10GB
+      max-file-size: 1GB
+  profiles:
+    active: prod
+
+
+pagehelper:
+  helper-dialect: mysql
+  #超过最大页数后还会返回数据:reasonable: true
+  reasonable: false
+  support-methods-arguments: true
+  params: count=countSql
+
+app:
+  appid: 2
+  appSecret: 3
+  appTimeOut: 10000
+  mchId: 4
+  createOrderUrl: https://api.mch.weixin.qq.com/pay/unifiedorder
+  notifyUrl: https:www.wolzq.com/weixin/API/Order/notify

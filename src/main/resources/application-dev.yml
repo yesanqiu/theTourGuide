@@ -1,0 +1,70 @@
+
+
+spring:
+  application:
+    name: demo
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+  datasource:
+    name: sanqiu
+    url: jdbc:mysql://${MYSQL_HOST:127.0.0.1}:${MYSQL_PORT:3306}/the_tour_guide?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: MyNewPass4!
+    # druid
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+  messages:
+    encoding: UTF-8
+    basename: i18n/abt_messages
+    use-code-as-default-message: true
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 5000
+    database: 0
+    jedis:
+      pool:
+        max-idle: 8
+        max-wait:
+        min-idle: 0
+
+
+
+
+server:
+  servlet:
+    session:
+      timeout: 2592000
+#  ssl:
+#    key-store: classpath:3532919_yesanqiu.top.pfx
+#    key-store-password: y6kP421I
+#    key-store-type: JKS
+
+mybatis:
+  mapper-locations: ["classpath*:mapper/**/*.xml"]
+  type-aliases-package: com.ysq.theTourGuide.mapper
+
+logging:
+  level:
+    com.ysq.theTourGuide.mapper: DEBUG
+
+range: 5000
+
+geo:
+  guide:
+    within: 100

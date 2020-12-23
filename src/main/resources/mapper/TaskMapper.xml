@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ysq.theTourGuide.mapper.TaskMapper">
+  <resultMap id="BaseResultMap" type="com.ysq.theTourGuide.entity.Task">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="t_id" jdbcType="BIGINT" property="tId" />
+    <result column="t_title" jdbcType="VARCHAR" property="tTitle" />
+    <result column="t_time" jdbcType="TIMESTAMP" property="tTime" />
+    <result column="t_score" jdbcType="INTEGER" property="tScore" />
+    <result column="tourist_id" jdbcType="BIGINT" property="touristId" />
+  </resultMap>
+
+</mapper>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!--<properties resource="dev.properties"/>-->
+
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+            <property name="lombok" value="Data"/>
+            <property name="generateColumnConsts" value="true"/>
+        </plugin>
+
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/the_tour_guide?serverTimezone=GMT%2B8&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;nullCatalogMeansCurrent=true"
+                        userId="root"
+                        password="123456">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="${targetModelPackage}" targetProject="${targetJavaProject}"/>
+
+        <sqlMapGenerator targetPackage="${targetXMLPackage}" targetProject="${targetResourcesProject}"/>
+
+        <javaClientGenerator targetPackage="${targetMapperPackage}" targetProject="${targetJavaProject}"
+                             type="XMLMAPPER"/>
+
+<!--        <table tableName="fans"/>-->
+<!--        <table tableName="tourist"/>-->
+<!--        <table tableName="guide"/>-->
+        <table tableName="video"/>
+<!--        <table tableName="like_video"/>-->
+<!--        <table tableName="the_order"/>-->
+<!--        <table tableName="route"/>-->
+<!--        <table tableName="scenic"/>-->
+<!--        <table tableName="comment"/>-->
+<!--        <table tableName="scenic_spot"/>-->
+<!--        <table tableName="like_comment"/>-->
+<!--        <table tableName="message"/>-->
+<!--        <table tableName="score_rule"/>-->
+<!--        <table tableName="score_type"/>-->
+<!--        <table tableName="administrator"/>-->
+<!--        <table tableName="administrator_type"/>-->
+<!--        <table tableName="administrator_authority"/>-->
+<!--        <table tableName="u_guide"/>-->
+<!--        <table tableName="sign_in"/>-->
+<!--        <table tableName="vip"/>-->
+<!--        <table tableName="task"/>-->
+<!--        <table tableName="look_video"/>-->
+<!--        <table tableName="card"/>-->
+
+    </context>
+</generatorConfiguration>

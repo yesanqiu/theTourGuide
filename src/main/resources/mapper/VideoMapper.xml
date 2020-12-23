@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ysq.theTourGuide.mapper.VideoMapper">
+  <resultMap id="BaseResultMap" type="com.ysq.theTourGuide.entity.Video">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="guide_id" jdbcType="BIGINT" property="guideId" />
+    <result column="route_id" jdbcType="BIGINT" property="routeId" />
+    <result column="scenic_id" jdbcType="BIGINT" property="scenicId" />
+    <result column="video_url" jdbcType="VARCHAR" property="videoUrl" />
+    <result column="like_nums" jdbcType="INTEGER" property="likeNums" />
+    <result column="v_describe" jdbcType="VARCHAR" property="vDescribe" />
+    <result column="date" jdbcType="TIMESTAMP" property="date" />
+    <result column="longitude" jdbcType="DOUBLE" property="longitude" />
+    <result column="latitude" jdbcType="DOUBLE" property="latitude" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="province" jdbcType="VARCHAR" property="province" />
+  </resultMap>
+
+<!--  <select id="findVideoByLocation" resultMap="BaseResultMap">-->
+<!--    select * from video where province like CONCAT('%',#{attr},'%') or city like CONCAT('%',#{attr},'%')-->
+<!--  </select>-->
+
+</mapper>

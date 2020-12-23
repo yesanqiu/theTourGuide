@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ysq.theTourGuide.mapper.AdministratorTypeMapper">
+  <resultMap id="BaseResultMap" type="com.ysq.theTourGuide.entity.AdministratorType">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="type_name" jdbcType="VARCHAR" property="typeName" />
+    <result column="authority_id" jdbcType="INTEGER" property="authorityId" />
+  </resultMap>
+
+</mapper>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ysq.theTourGuide.mapper.RouteMapper" >
+  <resultMap id="BaseResultMap" type="com.ysq.theTourGuide.entity.Route" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" property="id" jdbcType="BIGINT" />
+    <result column="video_id" property="videoId" jdbcType="BIGINT" />
+    <result column="line" property="line" jdbcType="VARCHAR" />
+    <result column="r_day" property="rDay" jdbcType="INTEGER" />
+    <result column="r_night" property="rNight" jdbcType="INTEGER" />
+    <result column="noss" property="noss" jdbcType="INTEGER" />
+    <result column="nosss" property="nosss" jdbcType="INTEGER" />
+    <result column="h_shop" property="hShop" jdbcType="BIT" />
+    <result column="g_language" property="gLanguage" jdbcType="VARCHAR" />
+    <result column="n_o_p" property="nOP" jdbcType="INTEGER" />
+    <result column="price" property="price" jdbcType="DOUBLE" />
+    <result column="discount_type_id" property="discountTypeId" jdbcType="INTEGER" />
+    <result column="discount_value" property="discountValue" jdbcType="INTEGER" />
+    <result column="r_describe" property="rDescribe" jdbcType="VARCHAR" />
+    <result column="guide_id" property="guideId" jdbcType="BIGINT" />
+  </resultMap>
+</mapper>

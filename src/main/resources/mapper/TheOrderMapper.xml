@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ysq.theTourGuide.mapper.OrderMapper">
+  <resultMap id="BaseResultMap" type="com.ysq.theTourGuide.entity.TheOrder">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="tourist_id" jdbcType="BIGINT" property="touristId" />
+    <result column="route_id" jdbcType="BIGINT" property="routeId" />
+    <result column="guide_id" jdbcType="BIGINT" property="guideId" />
+    <result column="t_start" jdbcType="VARCHAR" property="tStart" />
+    <result column="n_o_p" jdbcType="INTEGER" property="nOP" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
+    <result column="meet_time" jdbcType="TIMESTAMP" property="meetTime" />
+    <result column="state" jdbcType="VARCHAR" property="state" />
+    <result column="t_name" jdbcType="VARCHAR" property="tName" />
+    <result column="ID_number" jdbcType="VARCHAR" property="idNumber" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="price" jdbcType="DOUBLE" property="price" />
+    <result column="card_id" jdbcType="BIGINT" property="cardId" />
+  </resultMap>
+</mapper>
